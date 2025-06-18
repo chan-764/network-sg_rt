@@ -1,4 +1,3 @@
-cat main.tf 
 terraform {
   required_providers {
     aws = {
@@ -70,8 +69,6 @@ module "update_sg_rules" {
 
   ]
 }
-
-
 
 module "update_route_table" {
   source         = "./modules/update_route_table_routes"
